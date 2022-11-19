@@ -32,6 +32,9 @@ const app = createApp({
     /** 選択されたタグ */
     const selectedTag = ref("all");
 
+    /**
+     * 絞り込みの選択状態に応じてクエリを作成します
+     */
     const query = computed(() => {
       if (selectedCategory.value === "all" && selectedTag.value === "all") {
         return null;
