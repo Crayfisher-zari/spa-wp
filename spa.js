@@ -104,7 +104,7 @@ const app = createApp({
       tags.value.find((tag) => tag.id === id).name;
 
     /**
-     * カテゴリーやタグに基づいた絞り込んでフェットします
+     * カテゴリーやタグに基づいた絞り込んでフェッチします
      */
     const fetchByFilter = async () => {
       currentPage.value = 1;
